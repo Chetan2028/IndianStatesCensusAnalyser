@@ -80,6 +80,5 @@ namespace CensusAnalyserTest
             var censusException = Assert.Throws<CensusAnalyserException>(() => censusAnalyser.LoadCensusData(Country.INDIA, wrongHeaderIndianCensusFilePath, indianStateCensusHeaders));
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, censusException.etype);
         }
-
     }
 }
